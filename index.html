@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="shortcut icon" href="images/favicon-logo.png" type="image/x-icon">
+  <title>Santiago Rodriguez</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <ul class="nav-list">
+      <li class="item-list">
+        <a href="#">
+          <img id="own-logo" src="images/logo.png" alt="own-logo">
+        </a>
+      </li>
+      <li class="item-list">
+        <a href="https://www.linkedin.com/in/santiago-r-webdev/" target="_blank"><img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAADyUlEQVR4nO2du2sUURTGjxGfiA9E/QdUfHQ2PiobQSw0YqK2NqJooWBpbyKCVhYiIvGFrTa2goh2iq/4FrGxEJEEVFB/cmUCS9hk5949s3Ouc36w5Z7v++7H7szNZHZEHMdxHMdxHMdxMgCYDewDrgOjwDjOeLEWYU32hjXqVRl7gLe+/h15A+yusoiZwJnOPpxJnAb6qijEy0hnuIqvKac7+jUP4OH70OmOdyoH+uJsytFhUKOQG0pmHLiqUcgrX0k1RjUKGdPz03jGNApxFPFCjOGFGMMLMYYXYgwvxBgWCnkGHAZWAfOK12rgaBP3OFJzIeen+/sNMBcYoUFIjYXcAWaUvM7ygIYgNRayNUJjJw1BaixkQYTGEhqC1FjIogiNRTQEqbGQHREa22kIUmMh98MBu8T8PuAuDUFqLITif5TmTzN7DnCRBiE1FzJxLfk4sD6UU7zWAkeAlzQMMVCI04IXYgwvxBheiDG8EGN4IcaorRAtHdHz+wQ4C+wqTsFXFH9pXgasA7YBQ8AjKiQ2T0xAVeGK5vwpNqebImesAS4Dv1Pza+XpFLAy4QrmPAY2xr5/0qwtwIfUNdDIM13ASoWV51wKVyNj3zvFvKXAw9R16DbPVAErF1acc67MlcrImeHywNPkFrrI085MT4QV5/TFvqfk3JUaN7dqGOmJcGUBFAGOJTehladXwpUFUKS4m+x9chteiD7ACS9EgeI6zByFOWEj+cs/IQkAm4GbwNeWjeIn4ELYrXcx954XEglwssNO+2e4apk4+5QXEgFwoOSChU/M/oT5A15ISYDFwJeIBfsMLIzU2OCFlAQ4lLBYByM1lnshJQFuJyzWrYQztiRidKYS74mw4pyPCXY/RmrM6NW6tBPvibDinB8Jdr9bXZfahKue0wmrOuYCSmZ+tXXMBZTM/GrrmAsomfnV1jEXUDLzq61jLqBk5ldbx1xAycyvto65gJKZX20dcwElM7/aOuYCSmZ+tXXMBZTM/GrrmAsomfnV1jEXUDLzq61jLqBk5ldbx1xAycyvto65gJKZX20dcwElM7/aOuYCSmZ+tXXMBZTM/GrrmAsomfnV1lETdtrjhRjDCzGGF/IfFuIPdNHjm0YhjfvVtwp5oVHItSodNowRjULCg3YdHQY0CpkFvFYy1GTeqj1BOjz1uO40mRNundupUkZLKeGpx04ap1TLaPkF6uFEQ03+ZAxV9fsrE8X0+zGlFOHpQbsqK6LNgX4wPNs1nFv75vEfYQP9HLhS3DY9qydlOI7jOI7jOI7jSHf8BYwuTwfMtiVPAAAAAElFTkSuQmCC"></a>
+      </li>
+      <li class="item-list">
+        <a href="https://github.com/Sanrvallejo" target="_blank"><img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEDElEQVR4nO2ay0tVQRzHT2JUUNgLCnRRgY/ETNPKyhYJ0YNq1aKlRfYEw1rUKooWkqYmPaxW0T9RURr0MhF60LYyy0VlalGZWvaJ4Q50k3PvnZkzc+8VzgcuyPWc3/f7m3vOPH4znhcSEhISEuIUoAA4ALQB7cBrYBAYkx/x9yv5v8vAfiDfm8wAJUAz0Ic574EmYLk3GQCmANuBTuzzGNgmNLx0BFgFdOOeLqDcSxeAGcAFYJzkIbRagempTj4feEHqeAbkpir51cBnUo8YQSqTnfwWYJj04QewOVnJVwDfST+GnT8JRN75IdKXAWd9ApHePlGH1wGcBm4DIxYT+wnckrHvJLj2qZPRAbioYHR31PULgJPAxwCJfwDqgKyouDsV7jvvYpIzriCc53PvHOCGQfLXgdk+8XIV7v0NrLA5ve1WNJ0VJ04tcAWoBkqBbPlaiU+O/K5aXlMbJ45oUBU6rUybicztVckMLJjYT6aGny02BDs1BOdayTK+nywNP49sLGl1KLCWaWxPi7QcQXEQsWZNsV1Ws/X3VKXpqTGIWJ+G0B8r71xiTxukliq9QWZ9Opy1nm1sb6JKpIP+7JBIDU+VXmCak2z9vU0H3mn422ci0qYhUOMkU3s/0CUTgQ7F4GLOP8tJlvH9zdRYb9wxEehRDH7TSYZqHsWiS4XXJsEHFIM3OMlOzeM5RY/9JsFHFYPXOclOzeMxRY8jJsHHFIMfdZKd3QYYNQn+Jd3G/wCvwKDLTrDdSXZqHu+57AQ7FIP/AuY5yTC+v/lSW4W7JgLXUKfeSZbx/TVo+GszEajRLFoWOcnU31uxZtF1j4lIEXqI9UC2k4z/95Ujt811WGoq9kZTSCyfK6xn/c9PGfBW01NPEMFW9BmVhRRr5TERC2jRmJtE0xJEuBRzvsoKr9hKyzDQzgDWAFdlLFPMS2IC4IlP0CFZ5habJd8UTIh1xV5PEbF+11iLxOOhqmZMgB0+gUVJql7+SnkKnVKXTsFE7hX4NbwuW1U1E22MiAT8OBX1qsRaPInGKjGsSIsdHlM6dTVjAqyMsTUmkl4orzkUw8g9z/16fyKi4cpMdXVHhONR15zxqdie8AwBDhs2QLOpZqJC5HMfsZfRe3DyaWmQQ+HBIOsEYJPhuSE3BVoiO7N+54L2OtIr10y+3/mhKaBSzv0nDovFjmZ+Okdk1tr24AuwUR5MikZMVo5MOMwwNcjjqNEA4sxSlamOEcB6+cj5jQw9cuNiNEhvrNgAn4B1XioAliicG3LZAKLDW2w3K7PRoSnOERoXDSC0GpO5HZcQcSYHeJCEBuhyueS2MW3eKhYhDhrgfjK2360BLJOvRmGAGIWy9J20cpsTTOsBbtyEhISEhIR4kr+i680TiXDwqwAAAABJRU5ErkJggg=="></a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="introduce">
+      <div class="introduce-shapes">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+      </div>
+      <div class="introduce-right">
+        <article class="my-name">
+          <h3>Hola, soy</h3>
+          <h1>Santiago Rodriguez</h1>
+          <h2>desarrollador back-end</h2>
+        </article>
+        <article class="about-me">
+          <p>Soy desarrollador backend con experiencia en Spring Boot y NestJS. Me apasiona crear aplicaciones funcionales y bien estructuradas que ayudan a resolver problemas reales, siempre buscando aprender y mejorar en cada proyecto.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="projects">
+      <hr>
+      <h2>Proyectos.</h2>
+
+      <article class="projects-container">
+        <div class="card-project">
+          <div class="img-container">
+            <img src="images/logo_gavi.png" alt="gavi-project">
+          </div>
+          <div class="name-container">
+            <h4>Sistema de inventario Gavi</h4>
+            <button class="open-project">Ver proyecto</button>
+          </div>
+        </div>
+
+        <div class="card-project">
+          <div class="img-container">
+            <img src="images/logo_chopper.png" alt="gavi-project">
+          </div>
+          <div class="name-container">
+            <h4>E-commerce Chopper</h4>
+            <button class="open-project">Ver proyecto</button>
+          </div>
+        </div>
+
+        <div class="card-project">
+          <div class="img-container">
+            <img src="images/logo_mosqueta.png" alt="gavi-project">
+          </div>
+          <div class="name-container">
+            <h4>E-commerce Mosqueta Rose</h4>
+            <button class="open-project">Ver proyecto</button>
+          </div>
+        </div>
+
+        <div class="card-project">
+          <div class="img-container">
+            <img src="images/logo_glamping.svg" alt="gavi-project">
+          </div>
+          <div class="name-container">
+            <h4>Página web glamping</h4>
+            <button class="open-project">Ver proyecto</button>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>Soy el footer</p>
+    <p>Soy el footer</p>
+    <p>Soy el footer</p>
+    <p>Soy el footer</p>
+    <p>Soy el footer</p>
+    <p>Soy el footer</p>
+    <p>Soy el footer</p>
+  </footer>
+</body>
+
+</html>
