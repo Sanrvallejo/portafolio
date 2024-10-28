@@ -391,14 +391,10 @@ footer {
     padding: 0 10px;
   }
 
-  .projects-container {
-    right: 5vw;
-  }
-
   .introduce {
     flex-direction: column;
   }
-
+  
   .introduce-shapes {
     min-width: none;
     width: 100px;
@@ -425,7 +421,7 @@ footer {
     line-height: 50px;
     margin-left: 15px;
   }
-
+  
   .my-name h2 {
     font-size: 1rem;
     margin-left: 15px;
@@ -452,6 +448,16 @@ footer {
     font-weight: 800;
     color: black;
   }
+  
+  .projects-container {
+    width: 85vw;
+    padding: 50px 0;
+    margin-bottom: 50px;
+    margin-left: 27px;;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 5vh;
+  }
 
   .card-project {
     width: 100%;
@@ -465,4 +471,16 @@ footer {
     width: 95vw;
     margin: 25px 0;
   }
+
+  footer {
+    flex-direction: column;
+  }
+
+  .contact ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5vw;
+  }
+  
 }
