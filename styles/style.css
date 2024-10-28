@@ -96,13 +96,13 @@ li {
 .my-name h3 {
   font-size: 3rem;
   font-weight: 700;
-  line-height: 10vh;
+  line-height: 70px;
 }
 
 .my-name h1 {
   font-size: 5.5rem;
   font-weight: 900;
-  line-height: 11vh;
+  line-height: 80px;
   margin-left: 4vw;
 }
 
@@ -126,7 +126,7 @@ li {
   /* font-family: "Inter", sans-serif; */
   font-size: 1rem;
   font-weight: 400;
-  line-height: 3vh;
+  line-height: 20px;
   color: #056CF2;
 }
 
@@ -140,7 +140,7 @@ li {
 
 .about-me p {
   width: 90%;
-  line-height: 3vh;
+
 }
 
 .tools {
@@ -164,7 +164,7 @@ li {
   text-align: center;
   gap: 20px;
   font-size: 0.9rem;
-  line-height: 3vh;
+  line-height: 20px;
 }
 
 .tools-group span {
