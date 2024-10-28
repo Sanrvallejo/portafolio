@@ -21,7 +21,7 @@ body {
   overflow: scroll;
 }
 
-main{
+main {
   width: 80%;
   padding: 0 30px;
   display: flex;
@@ -83,7 +83,9 @@ li {
 
 .introduce-shapes {
   width: 17vw;
+  min-width: 40px;
   height: 30vh;
+  max-height: 200px;
   background-color: #056CF2;
   position: relative;
   right: 5vw;
@@ -269,7 +271,7 @@ hr {
 }
 
 .open-project {
-  width: 8vw;
+  width: max-content;
   padding: 8px;
   background-color: white;
   color: black;
@@ -298,11 +300,11 @@ footer {
   gap: 8vw;
 }
 
-.logo-footer img{
+.logo-footer img {
   width: 8vw;
 }
 
-.contact ul{
+.contact ul {
   display: flex;
   align-items: flex-start;
   gap: 5vw;
@@ -321,4 +323,146 @@ footer {
   color: white;
 }
 
+@media (max-width: 1300px) {
+  .projects-container {
+    right: 7vw;
+  }
 
+  .name-container h4 {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .projects-container {
+    right: 7vw;
+  }
+
+  .introduce-shapes {
+    width: 17vw;
+    min-width: 40px;
+    height: 30vh;
+    max-height: 200px;
+    background-color: #056CF2;
+    position: relative;
+    right: 8vw;
+  }
+
+  .my-name h3 {
+    font-size: 2.5rem;
+  }
+
+  .my-name h1 {
+    font-size: 4.5rem;
+    line-height: 68px;
+  }
+
+  .my-name h2 {
+    font-size: 1.2rem;
+  }
+
+  .about-me p {
+    font-size: 0.9rem;
+  }
+
+  .card-project {
+    width: 47%;
+    height: 20vh;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px #949494db;
+  }
+
+  .tools {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+  }
+
+  .tools-group {
+    width: 60%;
+  }
+}
+
+@media (max-width: 500px) {
+  main {
+    width: 90%;
+    padding: 0 10px;
+  }
+
+  .projects-container {
+    right: 5vw;
+  }
+
+  .introduce {
+    flex-direction: column;
+  }
+
+  .introduce-shapes {
+    min-width: none;
+    width: 100px;
+    right: 12vw;
+    height: 30px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .my-name {
+    width: 100%;
+  }
+
+  .my-name h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 40px;
+    margin-left: 0;
+  }
+
+  .my-name h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 50px;
+    margin-left: 15px;
+  }
+
+  .my-name h2 {
+    font-size: 1rem;
+    margin-left: 15px;
+  }
+
+  .about-me {
+    margin-top: 2vw;
+    padding: 20px 10px;
+  }
+
+  .projects hr {
+    display: inline-block;
+    width: 10vw;
+    margin-right: -5vw;
+    /* margin-top: 10vh; */
+    height: 6px;
+    background-color: #056CF2;
+    border: none;
+  }
+
+  .projects h2 {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: black;
+  }
+
+  .card-project {
+    width: 100%;
+  }
+
+  .img-container img {
+    width: 20vw;
+  }
+
+  .tools {
+    width: 95vw;
+    margin: 25px 0;
+  }
+}
