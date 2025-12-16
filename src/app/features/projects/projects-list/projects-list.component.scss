@@ -1,0 +1,150 @@
+@import '../../../../styles/variables';
+
+.projects-page {
+  min-height: calc(100vh - 72px);
+  padding: $spacing-3xl 0;
+  background-color: $background-light;
+}
+
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 $spacing-lg;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: $spacing-3xl;
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: $text-dark;
+    margin-bottom: $spacing-md;
+  }
+
+  p {
+    font-size: 1.1rem;
+    color: $text-muted;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: $spacing-xl;
+}
+
+.project-card {
+  background-color: white;
+  border-radius: $radius-lg;
+  overflow: hidden;
+  box-shadow: $shadow-md;
+  transition: all $transition-normal;
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: $shadow-xl;
+
+    .card-link {
+      color: $primary-color;
+    }
+
+    .card-image img {
+      transform: scale(1.05);
+    }
+  }
+
+  .card-image {
+    position: relative;
+    height: 200px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-bottom: 1px solid $border-color;
+
+    img {
+      max-width: 120px;
+      max-height: 120px;
+      object-fit: contain;
+      transition: transform $transition-normal;
+    }
+
+    .card-type {
+      position: absolute;
+      top: $spacing-md;
+      right: $spacing-md;
+      background-color: $primary-color;
+      color: white;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: $spacing-xs $spacing-sm;
+      border-radius: $radius-full;
+
+      &.design {
+        background-color: #9333EA;
+      }
+    }
+  }
+
+  .card-content {
+    padding: $spacing-xl;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: $text-dark;
+      margin-bottom: $spacing-sm;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: $text-muted;
+      line-height: 1.6;
+      margin-bottom: $spacing-md;
+      flex: 1;
+    }
+
+    .card-tech {
+      display: flex;
+      flex-wrap: wrap;
+      gap: $spacing-sm;
+      margin-bottom: $spacing-md;
+
+      .tech-tag {
+        background-color: rgba($primary-color, 0.1);
+        color: $primary-color;
+        font-size: 0.8rem;
+        font-weight: 500;
+        padding: $spacing-xs $spacing-sm;
+        border-radius: $radius-full;
+      }
+    }
+
+    .card-link {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: $text-muted;
+      transition: color $transition-fast;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-md) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-header h1 {
+    font-size: 2rem;
+  }
+}

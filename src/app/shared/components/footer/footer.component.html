@@ -1,0 +1,25 @@
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <img src="assets/images/logo.png" alt="Santiago Rodriguez Logo">
+      <p>Diseñador y desarrollador web</p>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contacto</h4>
+      <a [href]="'mailto:' + email">{{ email }}</a>
+    </div>
+
+    <div class="footer-social">
+      <h4>Redes</h4>
+      <div class="social-links">
+        <a [href]="linkedinUrl" target="_blank" rel="noopener">LinkedIn</a>
+        <a [href]="githubUrl" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; {{ currentYear }} Santiago Rodriguez. Todos los derechos reservados.</p>
+  </div>
+</footer>
