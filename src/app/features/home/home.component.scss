@@ -114,11 +114,11 @@
 }
 
 .skills-container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 0 $spacing-lg;
+  padding: 0 $spacing-xl;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: $spacing-xl;
 }
 
@@ -284,8 +284,14 @@
   }
 
   .skills-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: $spacing-xl;
+  }
+}
+
+@media (max-width: $breakpoint-sm) {
+  .skills-container {
     grid-template-columns: 1fr;
-    gap: $spacing-2xl;
   }
 }
 

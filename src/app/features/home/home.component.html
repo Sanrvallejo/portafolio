@@ -4,12 +4,11 @@
     <div class="hero-content">
       <span class="hero-greeting">Hola, soy</span>
       <h1 class="hero-name">Santiago Rodriguez</h1>
-      <h2 class="hero-role">Diseñador y desarrollador web</h2>
+      <h2 class="hero-role">Diseñador y desarrollador web full-stack</h2>
       <p class="hero-description">
-        Creo experiencias digitales que conecten a las personas con la tecnología
-        de manera intuitiva y accesible. Disfruto tanto de la lógica y análisis que
-        requiere el desarrollo back-end como del lado creativo del diseño, equilibrando
-        funcionalidad y estética en cada proyecto.
+        Desarrollo aplicaciones web de principio a fin: desde el diseño de interfaces
+        hasta el despliegue en la nube. Me especializo en crear soluciones digitales
+        para pequeños negocios que necesitan digitalizar sus procesos.
       </p>
       <div class="hero-cta">
         <a routerLink="/proyectos" class="btn btn-primary">Ver proyectos</a>
@@ -45,6 +44,11 @@
               <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
               <line x1="8" y1="21" x2="16" y2="21"></line>
               <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+          }
+          @if (skill.icon === 'cloud') {
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
             </svg>
           }
         </div>

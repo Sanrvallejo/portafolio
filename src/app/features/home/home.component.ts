@@ -13,20 +13,26 @@ export class HomeComponent {
     {
       title: 'Diseñador',
       icon: 'design',
-      description: 'Me enfoco en crear diseños web claros que den buena experiencia en su uso.',
-      tools: 'Figma e Illustrator'
+      description: 'Diseño interfaces centradas en el usuario, desde wireframes hasta prototipos interactivos.',
+      tools: 'Figma'
     },
     {
       title: 'Desarrollador Front-end',
       icon: 'frontend',
-      description: 'Transformo ideas en interfaces interactivas y responsivas.',
-      tools: 'HTML5, CSS3 y Javascript'
+      description: 'Desarrollo interfaces responsivas y componentes reutilizables con frameworks modernos.',
+      tools: 'Angular, TypeScript, HTML5, CSS3'
     },
     {
       title: 'Desarrollador Back-end',
       icon: 'backend',
-      description: 'Construyo sistemas que faciliten el flujo de información y satisfagan las necesidades del cliente.',
-      tools: 'Spring Boot y NestJS'
+      description: 'Construyo APIs RESTful y sistemas de gestión con arquitecturas en capas.',
+      tools: 'Java, Spring Boot, MySQL'
+    },
+    {
+      title: 'DevOps & Cloud',
+      icon: 'cloud',
+      description: 'Implemento pipelines de integración continua y despliegue de aplicaciones en la nube.',
+      tools: 'GitHub Actions, AWS (EC2, ECS, Lambda, Cognito)'
     }
   ];
 
